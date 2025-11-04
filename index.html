@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator in Javascript</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpg" href="logo.jpg">
+</head>
+<body id="background">
+    <div class="calculator" id="calculator">
+        <header class="calc">
+            <h3 id="calc">calc</h3>
+            <div class="move">
+                <span class="move-left" id="left">1</span>
+                <span class="move-center" id="next">2</span>
+                <div class="move-direct" id="center"></div>
+            </div>
+        </header>
+        <div class="display">
+            <input id="display">
+            <div class="buttons" id="buttons">
+                <button class="operator" id="operator" value="DEL">C</button>
+                <button class="operator" id="operator" value="^" onclick="expo()">^</button>
+                <button class="operator" id="operator" value="(">(</button>
+                <button class="operator" id="operator" value=")">)</button>
+                <button class="operator" id="operator" value="%">%</button>
+                <button class="operator" id="operator" value="BACKSCAPE">CE</button>
+                <button class="operator" id="operator" value="sin" onclick="sin()">sin</button>
+                <button class="operator" id="operator" value="pi" onclick="pi()">&pi;</button>
+                <button class="number" id="number" value="7">7</button>
+                <button class="number" id="number" value="8">8</button>
+                <button class="number" id="number" value="9">9</button>
+                <button class="operator" id="operator" value="/">/</button>
+                <button class="operator" id="operator" value="cos" onclick="cos()">cos</button>
+                <button class="operator" id="operator" value="log" onclick="log()">log</button>
+                <button class="number" id="number" value="4">4</button>
+                <button class="number" id="number" value="5">5</button>
+                <button class="number" id="number" value="6">6</button>
+                <button class="operator" id="operator" value="*">x</button>
+                <button class="operator" id="operator" value="tan" onclick="tan()">tan</button>
+                <button class="operator" id="operator" value="sqrt" onclick="sqrt()">&Sqrt;</button>
+                <button class="number" id="number" value="1">1</button>
+                <button class="number" id="number" value="2">2</button>
+                <button class="number" id="number" value="3">3</button>
+                <button class="operator" id="operator" value="-">-</button>
+                <button class="number" id="number" value="00">00</button>
+                <button class="operator" id="operator" value="sq" onclick="pow()">&sup2</button>
+                <button class="number" id="number" value="0">0</button>
+                <button class="operator" id="operator" value=".">.</button>
+                <button type="submit" class="operator equal" id="submit">=</button>
+                <button class="operator" id="operator" value="+">+</button>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
